@@ -1,0 +1,13 @@
+#heading-id {
+  color: pink;
+}
+h2.heading.title {
+  color: red;
+}
+.heading {
+  color: blue;
+}
+h2 {
+  color: #24969a;
+  font-size: 24px;
+}
