@@ -1,13 +1,192 @@
-#heading-id {
-  color: pink;
+:root {
+  --color-text: #25282b;
+  --color-primary: #16487a;
+  --color-secundary: #f7eeee;
 }
-h2.heading.title {
-  color: red;
+
+/* styles reset */
+* {
+  box-sizing: border-box;
 }
-.heading {
-  color: blue;
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: var(--color-secundary);
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 h2 {
-  color: #24969a;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h3 {
   font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* end of styles reset */
+
+/* buttons */
+.button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-primary {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-secundary);
+  background-color: var(--color-primary);
+}
+
+.button-secundary {
+  color: var(--color-secundary);
+  border: 2px solid var(--color-secundary);
+}
+
+.button-secundary:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secundary);
+}
+
+.button-tertiary {
+  color: var(--color-secundary);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.button-tertiary:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secundary);
+}
+/* end of buttons*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-secundary);
+}
+.header-content {
+  text-align: center;
+  max-width: 856px;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.header-title span {
+  color: rgb(169, 7, 7);
+}
+
+.about {
+  padding: 30px 0;
+  color: var(--color-text-secundary);
+  background-color: var(--color-primary);
+}
+
+@media (min-width: 992px) {
+  .about-content {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.about-title {
+  color: var(--color-text-secundary);
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.about-description {
+  margin-left: 30px;
+  text-align: justify;
+}
+
+.about-quote {
+  text-align: center;
+}
+
+
+@media (min-width: 992px) {
+  .about-content {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+.project-article {
+  text-align: justify;
+  padding: 30px 30px;
+}
+
+@media (min-width: 992px) {
+  .project-article {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.article-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.contact {
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.footer {
+  text-align: center;
+  flex-direction: row;
+  margin: 0;
+  background-color: var(--color-primary);
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px
+  border-radius: 50%;
+}
+
+.linkedin {
+  background-image: url(../../assets/img/icons/icon-linkedin.png);
+}
+
+.github {
+  background-image: url(../../assets/img/icons/icon-github.png);
 }
