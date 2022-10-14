@@ -1,0 +1,22 @@
+{
+  "name": "renatagasparino.github.io",
+  "version": "1.0.0",
+  "description": "my first portifolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatagasparino/renatagasparino.github.io.git"
+  },
+  "author": "Renata Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatagasparino/renatagasparino.github.io/issues"
+  },
+  "homepage": "https://github.com/renatagasparino/renatagasparino.github.io#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
