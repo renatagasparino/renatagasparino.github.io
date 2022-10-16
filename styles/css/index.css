@@ -1,10 +1,46 @@
-:root {
-  --color-text: #25282b;
-  --color-primary: #16487a;
-  --color-secundary: #f7eeee;
+.button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
-/* styles reset */
+.button-medium {
+  padding: 15px 20px;
+}
+
+.button-primary {
+  margin-right: 15px;
+  color: #16487a;
+  border: 2px solid #16487a;
+}
+.button-primary:hover {
+  color: #f7eeee;
+  background-color: #16487a;
+}
+
+.button-secondary {
+  color: #f7eeee;
+  border: 2px solid #f7eeee;
+}
+.button-secondary:hover:hover {
+  color: #16487a;
+  background-color: #f7eeee;
+}
+
+.button-tertiary {
+  color: #f7eeee;
+  background-color: #16487a;
+  border: 2px solid #16487a;
+}
+.button-tertiary:hover {
+  color: #16487a;
+  background-color: #f7eeee;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +48,6 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: var(--color-secundary);
 }
 
 ul {
@@ -28,86 +63,36 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-align: left;
-}
-
-/* end of styles reset */
-
-/* buttons */
-.button {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 12px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-}
-
-.button-primary {
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-.button-primary:hover {
-  color: var(--color-secundary);
-  background-color: var(--color-primary);
-}
-
-.button-secundary {
-  color: var(--color-secundary);
-  border: 2px solid var(--color-secundary);
-}
-
-.button-secundary:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secundary);
-}
-
-.button-tertiary {
-  color: var(--color-secundary);
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-.button-tertiary:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secundary);
-}
-/* end of buttons*/
-
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--color-secundary);
+  background-color: #f7eeee;
 }
+
 .header-content {
   text-align: center;
-  max-width: 856px;
+  /* max-width: 856px; */
 }
 
 .header-title {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.4;
-  color: var(--color-text-primary);
+  color: #25282b;
 }
-
 .header-title span {
-  color: rgb(169, 7, 7);
+  color: #ab0707;
 }
 
 .about {
-  padding: 30px 0;
-  color: var(--color-text-secundary);
-  background-color: var(--color-primary);
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  position: relative;
+  padding: 30px 0 120px;
+  color: #f7eeee;
+  background-color: #16487a;
+  clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0 100%);
+  margin-bottom: 30px;
 }
 
 @media (min-width: 992px) {
@@ -118,18 +103,13 @@ h3 {
   }
 }
 
-.about-title {
-  color: var(--color-text-secundary);
-}
-
 .about-img {
   width: 100%;
   max-width: 400px;
-  border-radius: 5px;
 }
 
 .about-description {
-  padding: 0 30px;
+  margin-left: 30px;
   text-align: justify;
 }
 
@@ -137,45 +117,45 @@ h3 {
   text-align: center;
 }
 
+.projects {
+  background-color: #f7eeee;
+}
+
+.projects-article {
+  padding: 30px 15px;
+}
 @media (min-width: 992px) {
-  .about-content {
+  .projects-article {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
   }
 }
 
-.project-article {
-  text-align: justify;
-  padding: 30px 30px;
+h3 {
+  font-weight: 500;
 }
 
-@media (min-width: 992px) {
-  .project-article {
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-}
-
-.article-img {
+.projects-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 5px;
 }
 
 .contact {
+  padding: 30px 0 30px;
   text-align: center;
-  background-color: var(--color-primary);
+  color: #f7eeee;
+  background-color: #16487a;
   clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
 }
 
-footer {
+.footer {
   text-align: center;
-  flex-direction: row;
   margin: 0;
-  color: var(--color-secundary);
-  background-color: var(--color-text);
+  padding: 30px;
+  color: #f7eeee;
+  background-color: #193b5d;
 }
 
 .social-link {
@@ -184,7 +164,7 @@ footer {
   height: 30px;
   background-size: 30px;
   border-radius: 50%;
-  background-color: var(--color-secundary);
+  background-color: #f7eeee;
 }
 
 .linkedin {
@@ -194,3 +174,5 @@ footer {
 .github {
   background-image: url(../../assets/img/icons/icon-github.png);
 }
+
+/*# sourceMappingURL=index.css.map */
