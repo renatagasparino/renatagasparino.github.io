@@ -50,10 +50,11 @@ body {
   margin: 0;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
 }
 
 h2 {
@@ -61,6 +62,19 @@ h2 {
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .header {
@@ -77,9 +91,6 @@ h2 {
 }
 
 .header-title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.4;
   color: #25282b;
 }
 .header-title span {
@@ -88,11 +99,10 @@ h2 {
 
 .about {
   position: relative;
-  padding: 30px 0 120px;
+  padding: 30px 0 60px;
   color: #f7eeee;
   background-color: #16487a;
   clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0 100%);
-  margin-bottom: 30px;
 }
 
 @media (min-width: 992px) {
@@ -106,6 +116,7 @@ h2 {
 .about-img {
   width: 100%;
   max-width: 400px;
+  border-radius: 5px;
 }
 
 .about-description {
@@ -118,28 +129,28 @@ h2 {
 }
 
 .projects {
+  text-align: justify;
+  padding: 30px 15px;
   background-color: #f7eeee;
 }
 
-.projects-article {
-  padding: 30px 15px;
-}
 @media (min-width: 992px) {
-  .projects-article {
+  .project-article {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
   }
 }
 
-h3 {
-  font-weight: 500;
+.article {
+  padding-right: 30px;
 }
 
 .projects-img {
   width: 100%;
   max-width: 400px;
   border-radius: 5px;
+  margin: 30px 0;
 }
 
 .contact {
@@ -147,11 +158,12 @@ h3 {
   text-align: center;
   color: #f7eeee;
   background-color: #16487a;
-  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .footer {
   text-align: center;
+  flex-direction: row;
   margin: 0;
   padding: 30px;
   color: #f7eeee;
@@ -160,11 +172,20 @@ h3 {
 
 .social-link {
   display: block;
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
+  width: 23px;
+  height: 23px;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 50%;
   background-color: #f7eeee;
+}
+
+.social-item {
+  display: inline-block;
+  background-color: #f7eeee;
+  border-radius: 50%;
+  padding: 1px;
 }
 
 .linkedin {
