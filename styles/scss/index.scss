@@ -2,6 +2,10 @@
 @import "buttons";
 @import "reset";
 
+body {
+  background-color: $color-primary;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -25,10 +29,10 @@
 
 .about {
   position: relative;
-  padding: 30px 0 60px;
+  padding: 30px 0 91px;
   color: $color-text-secondary;
   background-color: $color-secondary;
-  clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0 100%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
 }
 
 .about-content {
@@ -41,13 +45,13 @@
 
 .about-img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
+  max-width: 350px;
+  border-radius: 8px;
 }
 
 .about-description {
-  margin-left: 30px;
   text-align: justify;
+  padding: 30px;
 }
 
 .about-quote {
@@ -74,13 +78,13 @@
 .projects-img {
   width: 100%;
   max-width: 400px;
-  border-radius: 5px;
   margin: 30px 0;
+  border-radius: 8px;
 }
 
 .contact {
-  padding: 30px 0 30px;
   text-align: center;
+  padding: 30px 0 30px;
   color: $color-text-secondary;
   background-color: $color-secondary;
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
@@ -107,10 +111,10 @@
 }
 
 .social-item {
-  display: inline-block;
-  background-color: $color-primary;
-  border-radius: 50%;
   padding: 1px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: $color-primary;
 }
 
 .linkedin {
